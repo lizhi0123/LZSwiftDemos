@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let manager = LZSDKManager()
         manager.sdk_print()
         
-        let image = manager.staticSdk_image()
+        let image = manager.sdk_image()
         imageView.image = image
         
     }
