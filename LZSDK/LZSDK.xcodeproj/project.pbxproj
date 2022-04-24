@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BB86192814EFDF00F5ACDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB86182814EFDF00F5ACDF /* Assets.xcassets */; };
 		CA95A21E2813A8850093950E /* LZSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = CA95A21D2813A8850093950E /* LZSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA95A2252813AD280093950E /* LZSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95A2242813AD280093950E /* LZSDKManager.swift */; };
 		CAE2756C2813C71A00B12427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2756B2813C71A00B12427 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04BB86182814EFDF00F5ACDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA95A21A2813A8850093950E /* LZSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LZSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA95A21D2813A8850093950E /* LZSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZSDK.h; sourceTree = "<group>"; };
 		CA95A2242813AD280093950E /* LZSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZSDKManager.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				CA95A21D2813A8850093950E /* LZSDK.h */,
 				CA95A2242813AD280093950E /* LZSDKManager.swift */,
+				04BB86182814EFDF00F5ACDF /* Assets.xcassets */,
 			);
 			path = LZSDK;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BB86192814EFDF00F5ACDF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +431,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LZSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -461,7 +465,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LZSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
