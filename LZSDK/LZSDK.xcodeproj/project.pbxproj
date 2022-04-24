@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04BB86192814EFDF00F5ACDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB86182814EFDF00F5ACDF /* Assets.xcassets */; };
+		04BB861C2815178E00F5ACDF /* LZSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = CA95A21A2813A8850093950E /* LZSDK.framework */; };
 		CA95A21E2813A8850093950E /* LZSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = CA95A21D2813A8850093950E /* LZSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA95A2252813AD280093950E /* LZSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95A2242813AD280093950E /* LZSDKManager.swift */; };
 		CAE2756C2813C71A00B12427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2756B2813C71A00B12427 /* AppDelegate.swift */; };
@@ -230,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BB861C2815178E00F5ACDF /* LZSDK.framework in Resources */,
 				CAE275782813C71C00B12427 /* LaunchScreen.storyboard in Resources */,
 				CAE275752813C71C00B12427 /* Assets.xcassets in Resources */,
 				CAE275732813C71A00B12427 /* Main.storyboard in Resources */,
@@ -431,7 +433,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LZSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -465,7 +467,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LZSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
