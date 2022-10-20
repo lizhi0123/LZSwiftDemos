@@ -105,13 +105,12 @@
 				6D62FE852901482D0036DE0F /* Main.storyboard */,
 				6D62FE882901482F0036DE0F /* Assets.xcassets */,
 				6D62FE8A2901482F0036DE0F /* LaunchScreen.storyboard */,
-				6D62FEBA290149CE0036DE0F /* Vendor */,
-				6D62FEB9290149C60036DE0F /* Tool */,
-				6D62FEB8290149A50036DE0F /* Sections */,
-				6D62FEB72901499C0036DE0F /* Other */,
 				6D62FEB62901498F0036DE0F /* Main */,
+				6D62FEB8290149A50036DE0F /* Sections */,
 				6D62FEB5290149860036DE0F /* Macro */,
 				6D62FEB42901497E0036DE0F /* Category */,
+				6D62FEBA290149CE0036DE0F /* Vendor */,
+				6D62FEB9290149C60036DE0F /* Tool */,
 				6D62FEAF290149010036DE0F /* Resource */,
 				6D62FE8D2901482F0036DE0F /* Info.plist */,
 			);
@@ -161,13 +160,6 @@
 			children = (
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		6D62FEB72901499C0036DE0F /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		6D62FEB8290149A50036DE0F /* Sections */ = {
