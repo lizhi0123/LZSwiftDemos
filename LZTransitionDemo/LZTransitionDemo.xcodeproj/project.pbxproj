@@ -13,9 +13,13 @@
 		6D5706C02B1EF73B00D51482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5706BE2B1EF73B00D51482 /* Main.storyboard */; };
 		6D5706C22B1EF73D00D51482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5706C12B1EF73D00D51482 /* Assets.xcassets */; };
 		6D5706C52B1EF73D00D51482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5706C32B1EF73D00D51482 /* LaunchScreen.storyboard */; };
+		6D5706CD2B1EFA8900D51482 /* LZDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5706CC2B1EFA8900D51482 /* LZDetailViewController.swift */; };
+		EF8DC84E21D0EA5602DFDEE4 /* Pods_LZTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E73814BDD170AB5541705E /* Pods_LZTransitionDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26E73814BDD170AB5541705E /* Pods_LZTransitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZTransitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C392C6A25A112EF4EC4457F /* Pods-LZTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZTransitionDemo.release.xcconfig"; path = "Target Support Files/Pods-LZTransitionDemo/Pods-LZTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6D5706B52B1EF73B00D51482 /* LZTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5706B82B1EF73B00D51482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D5706BA2B1EF73B00D51482 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		6D5706C12B1EF73D00D51482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D5706C42B1EF73D00D51482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D5706C62B1EF73D00D51482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D5706CC2B1EFA8900D51482 /* LZDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZDetailViewController.swift; sourceTree = "<group>"; };
+		CE5FB87F0324A87C12994C6C /* Pods-LZTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZTransitionDemo.debug.xcconfig"; path = "Target Support Files/Pods-LZTransitionDemo/Pods-LZTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8DC84E21D0EA5602DFDEE4 /* Pods_LZTransitionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				6D5706B72B1EF73B00D51482 /* LZTransitionDemo */,
 				6D5706B62B1EF73B00D51482 /* Products */,
+				E77C8438ACE96DB63C5A16A5 /* Pods */,
+				C10C8355D1145926DF86098F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				6D5706C12B1EF73D00D51482 /* Assets.xcassets */,
 				6D5706C32B1EF73D00D51482 /* LaunchScreen.storyboard */,
 				6D5706C62B1EF73D00D51482 /* Info.plist */,
+				6D5706CC2B1EFA8900D51482 /* LZDetailViewController.swift */,
 			);
 			path = LZTransitionDemo;
+			sourceTree = "<group>";
+		};
+		C10C8355D1145926DF86098F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26E73814BDD170AB5541705E /* Pods_LZTransitionDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E77C8438ACE96DB63C5A16A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE5FB87F0324A87C12994C6C /* Pods-LZTransitionDemo.debug.xcconfig */,
+				5C392C6A25A112EF4EC4457F /* Pods-LZTransitionDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D5706C92B1EF73D00D51482 /* Build configuration list for PBXNativeTarget "LZTransitionDemo" */;
 			buildPhases = (
+				71BA88FA123F0C537F7DE6B4 /* [CP] Check Pods Manifest.lock */,
 				6D5706B12B1EF73B00D51482 /* Sources */,
 				6D5706B22B1EF73B00D51482 /* Frameworks */,
 				6D5706B32B1EF73B00D51482 /* Resources */,
+				6C4FE57DCCA2082466D46C87 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C4FE57DCCA2082466D46C87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZTransitionDemo/Pods-LZTransitionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LZTransitionDemo/Pods-LZTransitionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LZTransitionDemo/Pods-LZTransitionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71BA88FA123F0C537F7DE6B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LZTransitionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D5706B12B1EF73B00D51482 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				6D5706BD2B1EF73B00D51482 /* ViewController.swift in Sources */,
 				6D5706B92B1EF73B00D51482 /* AppDelegate.swift in Sources */,
 				6D5706BB2B1EF73B00D51482 /* SceneDelegate.swift in Sources */,
+				6D5706CD2B1EFA8900D51482 /* LZDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +359,14 @@
 		};
 		6D5706CA2B1EF73D00D51482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5FB87F0324A87C12994C6C /* Pods-LZTransitionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LZTransitionDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,7 +374,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,12 +390,14 @@
 		};
 		6D5706CB2B1EF73D00D51482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C392C6A25A112EF4EC4457F /* Pods-LZTransitionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LZTransitionDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -329,7 +405,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
