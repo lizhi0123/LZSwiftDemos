@@ -18,7 +18,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func presentClick(_ sender: Any) {
-        
+        let detailController = LZDetailViewController(nibName: nil, bundle: nil)
+        self.present(detailController, animated: true)
     }
 }
 
