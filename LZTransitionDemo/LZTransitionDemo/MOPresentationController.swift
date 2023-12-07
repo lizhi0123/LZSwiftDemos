@@ -2,8 +2,8 @@
 //  MOPresentationController.swift
 //  MOCustomTransitionAnimation
 //
-//  Created by mikimo on 2022/11/26.
-//  Copyright © 2022 mikimo. All rights reserved.
+//  Created by LiZhi on 2023/11/26.
+//  Copyright © 2023 LiZhi. All rights reserved.
 //
 
 import UIKit
