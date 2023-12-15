@@ -1,14 +1,15 @@
 //
 //  AppDelegate.swift
-//  LZTransitionDemo
+//  APP
 //
-//  Created by LiZhi on 2023/12/5.
+//  Created by LiZhi on 2023/12/14.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

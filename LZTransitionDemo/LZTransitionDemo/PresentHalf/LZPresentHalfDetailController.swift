@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class LZDetailViewController: UIViewController {
+class LZPresentHalfDetailController: UIViewController {
     
     internal lazy var containerView: UIView  = {
         let view = UIView()
@@ -78,7 +78,7 @@ class LZDetailViewController: UIViewController {
 
 }
 
-extension LZDetailViewController: UIViewControllerTransitioningDelegate {
+extension LZPresentHalfDetailController: UIViewControllerTransitioningDelegate {
     
 //    present和dismiss动画如果想在一个中间的viewController进行
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
