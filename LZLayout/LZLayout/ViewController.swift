@@ -9,33 +9,34 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    lazy var collectionLayout: LZCollectionPageFlowLayout  = {
-        let collectionLayout = LZCollectionPageFlowLayout()
-        collectionLayout.scrollDirection = .horizontal
-        collectionLayout.headerReferenceSize = CGSize.zero//CGSize(width: kScreenWidth, height: 100)
+    
+    lazy var tableView: UITableView  = {
+        let tableView = UITableView(frame: .zero, style: .plain)
+        tableView.backgroundColor = .white
         
-        collectionLayout.minimumLineSpacing = 0
-        collectionLayout.minimumInteritemSpacing = 0
-        let itemWidth = 315
-        collectionLayout.itemSize = CGSize(width: 315, height: 350)
-        return collectionLayout
+        // 注册cell
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        
+        // 代理
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        // 解决隐藏导航栏后, UITableView向下偏移状态栏高度
+        tableView.contentInsetAdjustmentBehavior = .never
+        
+        // 防抖动
+        tableView.estimatedRowHeight = 0
+        tableView.estimatedSectionHeaderHeight = 0
+        tableView.estimatedSectionFooterHeight = 0
+        
+        
+        return tableView
     }()
     
-    lazy var collectionView: UICollectionView  = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: self.collectionLayout)
-        collectionView.backgroundColor = UIColor.gray
-        collectionView.register(BBHomeTopCollectionCell.self, forCellWithReuseIdentifier: "BBHomeTopCollectionCell")
-        
-        collectionView.dataSource = self
-        collectionView.delegate = self
-//        collectionView.contentInsetAdjustmentBehavior = .never
-        return collectionView
-    }()
     
     
-   
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,40 +44,51 @@ class ViewController: UIViewController {
     }
     
     private func addSubViews(){
-        self.view.addSubview(self.collectionView)
-        self.collectionView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
+        self.view.addSubview(tableView)
+        self.tableView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(150)
             make.leading.equalToSuperview()
-//            make.bottom.equalToSuperview()
+            make.bottom.equalToSuperview()
             make.trailing.equalToSuperview()
-            make.height.equalTo(400)
+        }
+        
+    }
+    
+}
+    extension ViewController : UITableViewDataSource {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return 5
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+            cell.selectionStyle = .none
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = "分页 layout"
+            case 1:
+                cell.textLabel?.text = "coverflow 缩放 layout"
+            default:
+                cell.textLabel?.text = "其它"
+            }
+            return cell
+        }
+        
+        
+    }
+    
+    extension ViewController : UITableViewDelegate {
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            switch indexPath.row {
+            case 0:
+                self.navigationController?.pushViewController(PageViewController(), animated: true)
+            case 1:
+                self.navigationController?.pushViewController(CoverflowViewController(), animated: true)
+            default:
+               break
+            }
         }
     }
 
 
-}
-
-// MARK: - UICollectionViewDataSource
-extension ViewController :UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 14
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BBHomeTopCollectionCell", for: indexPath)
-        guard let cell  = cell as? BBHomeTopCollectionCell else { return UICollectionViewCell() }
-        
-        cell.backgroundColor = UIColor.yellow
-        cell.Label.text = "\(indexPath.row)"
-        return cell
-    }
- 
-    
-}
-
-extension ViewController : UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-    }
-}
 
