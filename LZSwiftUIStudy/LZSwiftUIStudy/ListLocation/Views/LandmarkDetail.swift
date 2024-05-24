@@ -8,7 +8,19 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    
+    var landmark: Landmark
+    
     var body: some View {
-        Text("Hello ")
+        ScrollView {
+            MapView(coordinate: landmark.locationCoordinate)
+                .frame(height: 300)
+        }
+        
     }
+}
+
+
+#Preview {
+    LandmarkDetail(landmark: landmarks[0])
 }

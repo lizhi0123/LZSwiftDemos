@@ -21,6 +21,7 @@
 		6DC090842C0073A700710726 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC090832C0073A700710726 /* LandmarkRow.swift */; };
 		6DC090862C0073FD00710726 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC090852C0073FD00710726 /* LandmarkDetail.swift */; };
 		6DC090882C00751900710726 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC090872C00751900710726 /* HomeList.swift */; };
+		6DC0908A2C00888600710726 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC090892C00888600710726 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		6DC090832C0073A700710726 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		6DC090852C0073FD00710726 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		6DC090872C00751900710726 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
+		6DC090892C00888600710726 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				6DC090782C00657300710726 /* LandmarkList.swift */,
 				6DC090832C0073A700710726 /* LandmarkRow.swift */,
 				6DC090852C0073FD00710726 /* LandmarkDetail.swift */,
+				6DC090892C00888600710726 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				6DC0904E2C00509900710726 /* LZSwiftUIStudyApp.swift in Sources */,
 				6DC0907F2C0066B800710726 /* Landmark.swift in Sources */,
 				6DC090882C00751900710726 /* HomeList.swift in Sources */,
+				6DC0908A2C00888600710726 /* MapView.swift in Sources */,
 				6DC090862C0073FD00710726 /* LandmarkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +493,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +522,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

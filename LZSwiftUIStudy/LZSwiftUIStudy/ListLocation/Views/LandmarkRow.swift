@@ -12,6 +12,19 @@ struct LandmarkRow: View {
     var landmark: Landmark
     
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        HStack{
+            landmark.image
+                .resizable()
+                .frame(width: 50,height: 50)
+            Text(landmark.name)
+            Spacer()
+        }
+    }
+}
+
+#Preview {
+    Group{
+        LandmarkRow(landmark: landmarks[0])
+        LandmarkRow(landmark: landmarks[1])
     }
 }
