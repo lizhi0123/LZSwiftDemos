@@ -18,9 +18,34 @@ struct HomeList: View {
                 } label: {
                     Text("列表 位置")
                 }
+                
+                NavigationLink {
+                    TextLabelView()
+                } label: {
+                    Text("Text & Label")
+                }
+                
+                NavigationLink {
+                    TextFieldDemo()
+                } label: {
+                    Text("TextField")
+                }
+                
+                NavigationLink {
+                    ImageDemo()
+                } label: {
+                    Text("Image")
+                }
+                
+                
+                NavigationLink {
+                    ButtonLinkDemo()
+                } label: {
+                    Text("Button & link")
+                }
+
 
                 Text("2 ")
-    //            }
 
             }.navigationTitle("首页列表")
             

@@ -5,9 +5,13 @@
 //  Created by LiZhi on 2024/5/24.
 //
 
+import SwiftUI
 import Foundation
 
-var landmarks: [Landmark] = load("landmarkData.json")
+@Observable
+class ModelData {
+    var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 func load<T:Decodable>(_ filename: String) -> T {
     let data: Data
