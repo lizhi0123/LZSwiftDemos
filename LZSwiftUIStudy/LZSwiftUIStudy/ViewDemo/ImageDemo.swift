@@ -10,21 +10,25 @@ import SwiftUI
 
 struct ImageDemo: View {
     var body: some View {
-        Image("foo") //image name is foo
         
-        Image(systemName: "clock.fill")
+        VStack{
+            Image("foo")
+                .resizable()
+                .frame(width: 150,height: 100,alignment: .leading)
+            //image name is foo
+            
+            Image(systemName: "clock.fill").foregroundColor(.red)
+                .font(.title)
+            
+            Image(systemName: "clock")
+                .foregroundColor(.red)
+                .font(Font.system(.largeTitle).bold())
+            
+            Image("foo")
+                .resizable()//// it will sized so that it fills all the available space
+                .aspectRatio(contentMode: .fit)
+        }
         
-        Image(systemName: "cloud.heavyrain.fill")
-            .foregroundColor(.red)
-            .font(.title)
-        
-        Image(systemName: "clock")
-            .foregroundColor(.red)
-            .font(Font.system(.largeTitle).bold())
-        
-        Image("foo")
-            .resizable()//// it will sized so that it fills all the available space
-            .aspectRatio(contentMode: .fit)
     }
 }
 

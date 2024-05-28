@@ -17,6 +17,7 @@
 		6D44E6C22C05B40000B77BFE /* ControllerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6C12C05B40000B77BFE /* ControllerPage.swift */; };
 		6D44E6C42C05B5C500B77BFE /* UIKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6C32C05B5C500B77BFE /* UIKitController.swift */; };
 		6D44E6C62C05B9AE00B77BFE /* SpacerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6C52C05B9AE00B77BFE /* SpacerPage.swift */; };
+		6D44E6C82C05F13500B77BFE /* NavigationButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6C72C05F13500B77BFE /* NavigationButtonPage.swift */; };
 		6DC0904E2C00509900710726 /* LZSwiftUIStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0904D2C00509900710726 /* LZSwiftUIStudyApp.swift */; };
 		6DC090502C00509900710726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0904F2C00509900710726 /* ContentView.swift */; };
 		6DC090522C00509B00710726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC090512C00509B00710726 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		6D44E6C12C05B40000B77BFE /* ControllerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPage.swift; sourceTree = "<group>"; };
 		6D44E6C32C05B5C500B77BFE /* UIKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitController.swift; sourceTree = "<group>"; };
 		6D44E6C52C05B9AE00B77BFE /* SpacerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerPage.swift; sourceTree = "<group>"; };
+		6D44E6C72C05F13500B77BFE /* NavigationButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonPage.swift; sourceTree = "<group>"; };
 		6DC0904A2C00509900710726 /* LZSwiftUIStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZSwiftUIStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC0904D2C00509900710726 /* LZSwiftUIStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZSwiftUIStudyApp.swift; sourceTree = "<group>"; };
 		6DC0904F2C00509900710726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				6D44E6BE2C05AE9B00B77BFE /* SpecialPage */,
+				6D44E6C72C05F13500B77BFE /* NavigationButtonPage.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				6D0224F02C048B5200CF37F9 /* TextSecureFieldDemo.swift in Sources */,
 				6DC0908A2C00888600710726 /* MapView.swift in Sources */,
 				6D44E6C22C05B40000B77BFE /* ControllerPage.swift in Sources */,
+				6D44E6C82C05F13500B77BFE /* NavigationButtonPage.swift in Sources */,
 				6D0224F62C049DAE00CF37F9 /* NavigationDemo.swift in Sources */,
 				6D0224F22C0491A300CF37F9 /* ImageDemo.swift in Sources */,
 				6D44E6BC2C05A9D900B77BFE /* PageRow.swift in Sources */,

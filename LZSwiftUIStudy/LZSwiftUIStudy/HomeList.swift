@@ -56,6 +56,12 @@ struct HomeList: View {
                         label: {
                             PageRow(title: "button link", subTitle: "")
                         })
+                    
+                    NavigationLink(
+                        destination: NavigationButtonPage(),
+                        label: {
+                            PageRow(title: "NavigationButton", subTitle: "")
+                        })
                 }
                 
 
