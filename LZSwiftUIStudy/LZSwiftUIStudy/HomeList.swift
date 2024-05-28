@@ -40,6 +40,12 @@ struct HomeList: View {
                         })
                     
                     NavigationLink(
+                        destination: TextSecureFieldDemo(),
+                        label: {
+                            PageRow(title: "TextField & SecureField", subTitle: "")
+                        })
+                    
+                    NavigationLink(
                         destination: ImageDemo(),
                         label: {
                             PageRow(title: "Image", subTitle: "")
