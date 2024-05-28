@@ -23,10 +23,13 @@ struct HomeList: View {
                     } label: {
                         PageRow(title: "UIViewController", subTitle: "打开 UIViewController")
                     }
-
+                    NavigationLink {
+                        SpacerPage()
+                    } label: {
+                        PageRow(title: "Spacer", subTitle: "一个空白占用视图,为了方便展示,已用黄色标出")
+                    }
 
                 }
-
             }
             .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("Example"), displayMode: .inline)
@@ -36,7 +39,7 @@ struct HomeList: View {
                 Text("Right").foregroundColor(.orange)
             }))
         }
-        
+
     }
 }
 
