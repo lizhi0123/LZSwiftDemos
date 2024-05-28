@@ -9,48 +9,25 @@ import SwiftUI
 
 struct HomeList: View {
     var body: some View {
-        NavigationSplitView {
-            Text("Hello ")
-            
+        NavigationView {
             List {
-                NavigationLink {
-                    LandmarkList()
-                } label: {
-                    Text("列表 位置")
-                }
-                
-                NavigationLink {
-                    TextLabelView()
-                } label: {
-                    Text("Text & Label")
-                }
-                
-                NavigationLink {
-                    TextFieldDemo()
-                } label: {
-                    Text("TextField")
-                }
-                
-                NavigationLink {
-                    ImageDemo()
-                } label: {
-                    Text("Image")
-                }
-                
-                
-                NavigationLink {
-                    ButtonLinkDemo()
-                } label: {
-                    Text("Button & link")
+                Section(header: Text("特殊视图")) {
+                    NavigationLink(
+                        destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                        label: {
+                            PageRow(title: "webView", subTitle: "用户展示一个打开的网页")
+                        })
+
                 }
 
-
-                Text("2 ")
-
-            }.navigationTitle("首页列表")
-            
-        } detail: {
-            Text("选择首页列表")
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle(Text("Example"), displayMode: .inline)
+            .navigationBarItems(trailing: Button(action: {
+                print("clicked")
+            }, label: {
+                Text("Right").foregroundColor(.orange)
+            }))
         }
         
     }
