@@ -13,7 +13,7 @@ struct HomeList: View {
             List {
                 Section(header: Text("特殊视图")) {
                     NavigationLink(
-                        destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                        destination: WebViewPage(),
                         label: {
                             PageRow(title: "webView", subTitle: "用户展示一个打开的网页")
                         })

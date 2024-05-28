@@ -13,6 +13,7 @@
 		6D0224F42C0493E800CF37F9 /* ButtonLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0224F32C0493E800CF37F9 /* ButtonLinkDemo.swift */; };
 		6D0224F62C049DAE00CF37F9 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0224F52C049DAE00CF37F9 /* NavigationDemo.swift */; };
 		6D44E6BC2C05A9D900B77BFE /* PageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6BB2C05A9D900B77BFE /* PageRow.swift */; };
+		6D44E6C02C05AEC400B77BFE /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6BF2C05AEC400B77BFE /* WebViewPage.swift */; };
 		6DC0904E2C00509900710726 /* LZSwiftUIStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0904D2C00509900710726 /* LZSwiftUIStudyApp.swift */; };
 		6DC090502C00509900710726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0904F2C00509900710726 /* ContentView.swift */; };
 		6DC090522C00509B00710726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC090512C00509B00710726 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		6D0224F32C0493E800CF37F9 /* ButtonLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLinkDemo.swift; sourceTree = "<group>"; };
 		6D0224F52C049DAE00CF37F9 /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		6D44E6BB2C05A9D900B77BFE /* PageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRow.swift; sourceTree = "<group>"; };
+		6D44E6BF2C05AEC400B77BFE /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		6DC0904A2C00509900710726 /* LZSwiftUIStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZSwiftUIStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC0904D2C00509900710726 /* LZSwiftUIStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZSwiftUIStudyApp.swift; sourceTree = "<group>"; };
 		6DC0904F2C00509900710726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,22 @@
 			path = ViewDemo;
 			sourceTree = "<group>";
 		};
+		6D44E6BD2C05AE9000B77BFE /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				6D44E6BE2C05AE9B00B77BFE /* SpecialPage */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		6D44E6BE2C05AE9B00B77BFE /* SpecialPage */ = {
+			isa = PBXGroup;
+			children = (
+				6D44E6BF2C05AEC400B77BFE /* WebViewPage.swift */,
+			);
+			path = SpecialPage;
+			sourceTree = "<group>";
+		};
 		6DC090412C00509900710726 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +155,7 @@
 		6DC0904C2C00509900710726 /* LZSwiftUIStudy */ = {
 			isa = PBXGroup;
 			children = (
+				6D44E6BD2C05AE9000B77BFE /* Page */,
 				6D0224EC2C04876100CF37F9 /* ViewDemo */,
 				6DC090772C00645000710726 /* ListLocation */,
 				6DC0904D2C00509900710726 /* LZSwiftUIStudyApp.swift */,
@@ -344,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DC090502C00509900710726 /* ContentView.swift in Sources */,
+				6D44E6C02C05AEC400B77BFE /* WebViewPage.swift in Sources */,
 				6D0224EE2C04878A00CF37F9 /* TextLabelView.swift in Sources */,
 				6D0224F42C0493E800CF37F9 /* ButtonLinkDemo.swift in Sources */,
 				6DC0907D2C00668900710726 /* ModelData.swift in Sources */,
