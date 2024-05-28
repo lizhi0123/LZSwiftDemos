@@ -29,7 +29,7 @@ struct LandmarkDetail: View {
                     Text(landmark.state)
                 }
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                //.foregroundStyle(.secondary)
 
                 Divider()
 

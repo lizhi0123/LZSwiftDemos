@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct HomeList: View {
     var body: some View {
@@ -17,6 +18,12 @@ struct HomeList: View {
                         label: {
                             PageRow(title: "webView", subTitle: "用户展示一个打开的网页")
                         })
+                    NavigationLink {
+                        ControllerPage<UIKitController>()
+                    } label: {
+                        PageRow(title: "UIViewController", subTitle: "打开 UIViewController")
+                    }
+
 
                 }
 

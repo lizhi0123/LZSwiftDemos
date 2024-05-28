@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-@Observable
+//@Observable
 class ModelData {
     var landmarks: [Landmark] = load("landmarkData.json")
 }

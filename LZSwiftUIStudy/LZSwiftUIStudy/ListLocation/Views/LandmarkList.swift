@@ -10,7 +10,8 @@ import SwiftUI
 struct LandmarkList: View {
     
     //Environment property wrapper to the view, and an environment(_:) modifier to the preview
-    @Environment(ModelData.self) var modelData
+//    @Environment(ModelData.self) var modelData
+    var modelData: ModelData = ModelData()
     //State attribute to add state to a view.
     @State private var showFavoritesOnly = false
     
@@ -44,5 +45,6 @@ struct LandmarkList: View {
 
 #Preview {
     LandmarkList()
-        .environment(ModelData())
+    
+       // .environment(ModelData())
 }

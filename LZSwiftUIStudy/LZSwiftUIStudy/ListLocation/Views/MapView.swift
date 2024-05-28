@@ -12,7 +12,11 @@ struct MapView: View {
     var coordinate: CLLocationCoordinate2D
     
     var body: some View {
-        Map(position: .constant(.region(region)))
+        if #available(iOS 17.0, *) {
+            Map(position: .constant(.region(region)))
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     private var region: MKCoordinateRegion {
