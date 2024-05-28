@@ -30,6 +30,29 @@ struct HomeList: View {
                     }
 
                 }
+                
+                
+                Section(header: Text("基础控件")) {
+                    NavigationLink(
+                        destination: TextLabelView(),
+                        label: {
+                            PageRow(title: "Text&Label", subTitle: "")
+                        })
+                    
+                    NavigationLink(
+                        destination: ImageDemo(),
+                        label: {
+                            PageRow(title: "Image", subTitle: "")
+                        })
+                    
+                    NavigationLink(
+                        destination: ButtonLinkDemo(),
+                        label: {
+                            PageRow(title: "button link", subTitle: "")
+                        })
+                }
+                
+
             }
             .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("Example"), displayMode: .inline)
