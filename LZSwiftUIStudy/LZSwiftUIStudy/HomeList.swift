@@ -64,6 +64,16 @@ struct HomeList: View {
                         })
                 }
                 
+                Section(header: Text("选择器")) {
+                    NavigationLink(destination: PickerPage()) {
+                        PageRow(title: "Picker",subTitle: "可自定义数据源的 Picker 选择器")
+                    }
+                    
+                    NavigationLink(destination: TogglePage()) {
+                        PageRow(title: "Toggle",subTitle: "开关状态切换")
+                    }
+                }
+                
 
             }
             .listStyle(GroupedListStyle())

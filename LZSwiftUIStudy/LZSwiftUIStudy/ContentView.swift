@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//参考地址：https://jinxiansen.github.io/SwiftUI/README_CN.html#UIViewController
 struct ContentView: View {
     var body: some View {
 //        LandmarkList()
