@@ -72,6 +72,38 @@ struct HomeList: View {
                     NavigationLink(destination: TogglePage()) {
                         PageRow(title: "Toggle",subTitle: "开关状态切换")
                     }
+                    
+                    NavigationLink(destination: SliderPage()) {
+                        PageRow(title: "Slider",subTitle: "用以设置指定范围内的值")
+                    }
+                    NavigationLink(destination: StepperPage()) {
+                        PageRow(title: "Stepper",subTitle: "用以增加或减少数值")
+                    }
+                }
+                
+                Section(header: Text("布局")) {
+                    NavigationLink(destination: HStackPage()) {
+                        PageRow(title: "HStack",subTitle: "将子视图排列在水平线上的视图")
+                    }
+                    NavigationLink(destination: VStackPage()) {
+                        PageRow(title: "VStack",subTitle: "将子视图排列在垂直线上的视图")
+                    }
+                    NavigationLink(destination: ZStackPage()) {
+                        PageRow(title: "ZStack",subTitle: "覆盖子视图，在两轴上对齐")
+                    }
+                    
+                    NavigationLink(destination: ScrollViewPage()) {
+                        PageRow(title: "ScrollView",subTitle: "滚动视图")
+                    }
+                    
+                    NavigationLink(destination: GroupPage()) {
+                        PageRow(title: "Group",subTitle: "用于集合多个视图，对 Group 设置的属性，将作用于每个子视图")
+                    }.frame(height: 80)
+                    NavigationLink(destination: SectionPage()) {
+                        PageRow(title: "Section",subTitle: "用于创建带头/尾部的视图内容，一般结合 `List` 组件使用")
+                    }.frame(height: 80)
+                    
+                    
                 }
                 
 
