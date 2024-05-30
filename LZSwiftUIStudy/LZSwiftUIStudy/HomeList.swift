@@ -96,6 +96,10 @@ struct HomeList: View {
                         PageRow(title: "ScrollView",subTitle: "滚动视图")
                     }
                     
+                    NavigationLink(destination: ForEachPage()) {
+                        PageRow(title: "ForEach",subTitle: "用于根据已有数据的集合展示视图")
+                    }
+                    
                     NavigationLink(destination: GroupPage()) {
                         PageRow(title: "Group",subTitle: "用于集合多个视图，对 Group 设置的属性，将作用于每个子视图")
                     }.frame(height: 80)
@@ -104,6 +108,21 @@ struct HomeList: View {
                     }.frame(height: 80)
                     
                     
+                }
+                
+                Section(header: Text("Alert 弹框视图")) {
+                    NavigationLink(destination: AlertPage()) {
+                        PageRow(title: "Alert",subTitle: "展示一个弹框提醒")
+                    }
+                    NavigationLink(destination: ActionSheetPage()) {
+                        PageRow(title: "ActionSheet",subTitle: "弹出一个选择框")
+                    }
+                    NavigationLink(destination: ModalPage()) {
+                        PageRow(title: "Modal",subTitle: "Modal 弹出一个视图")
+                    }
+                    NavigationLink(destination: PopoverPage()) {
+                        PageRow(title: "Popover",subTitle: "Pop 弹出一个视图")
+                    }
                 }
                 
 
