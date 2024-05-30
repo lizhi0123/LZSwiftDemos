@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D3B81CC2C0877BE00A848C9 /* LZWechatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81CB2C0877BE00A848C9 /* LZWechatApp.swift */; };
+		6D3B81CE2C0877BE00A848C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81CD2C0877BE00A848C9 /* ContentView.swift */; };
+		6D3B81D02C0877C000A848C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3B81CF2C0877C000A848C9 /* Assets.xcassets */; };
+		6D3B81D32C0877C000A848C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3B81D22C0877C000A848C9 /* Preview Assets.xcassets */; };
+		6D3B81DD2C0877C100A848C9 /* LZWechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81DC2C0877C100A848C9 /* LZWechatTests.swift */; };
+		6D3B81E72C0877C100A848C9 /* LZWechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81E62C0877C100A848C9 /* LZWechatUITests.swift */; };
+		6D3B81E92C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81E82C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift */; };
+		6D3B81FA2C087CC800A848C9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81F92C087CC800A848C9 /* RootView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D3B81D92C0877C100A848C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3B81C02C0877BE00A848C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3B81C72C0877BE00A848C9;
+			remoteInfo = LZWechat;
+		};
+		6D3B81E32C0877C100A848C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3B81C02C0877BE00A848C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3B81C72C0877BE00A848C9;
+			remoteInfo = LZWechat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D3B81C82C0877BE00A848C9 /* LZWechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZWechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3B81CB2C0877BE00A848C9 /* LZWechatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZWechatApp.swift; sourceTree = "<group>"; };
+		6D3B81CD2C0877BE00A848C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D3B81CF2C0877C000A848C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D3B81D22C0877C000A848C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D3B81D82C0877C100A848C9 /* LZWechatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZWechatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3B81DC2C0877C100A848C9 /* LZWechatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZWechatTests.swift; sourceTree = "<group>"; };
+		6D3B81E22C0877C100A848C9 /* LZWechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZWechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3B81E62C0877C100A848C9 /* LZWechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZWechatUITests.swift; sourceTree = "<group>"; };
+		6D3B81E82C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZWechatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D3B81F92C087CC800A848C9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D3B81C52C0877BE00A848C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3B81D52C0877C100A848C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3B81DF2C0877C100A848C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D3B81BF2C0877BE00A848C9 = {
+			isa = PBXGroup;
+			children = (
+				6D3B81CA2C0877BE00A848C9 /* LZWechat */,
+				6D3B81DB2C0877C100A848C9 /* LZWechatTests */,
+				6D3B81E52C0877C100A848C9 /* LZWechatUITests */,
+				6D3B81C92C0877BE00A848C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D3B81C92C0877BE00A848C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D3B81C82C0877BE00A848C9 /* LZWechat.app */,
+				6D3B81D82C0877C100A848C9 /* LZWechatTests.xctest */,
+				6D3B81E22C0877C100A848C9 /* LZWechatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D3B81CA2C0877BE00A848C9 /* LZWechat */ = {
+			isa = PBXGroup;
+			children = (
+				6D3B81F72C087CA000A848C9 /* Module */,
+				6D3B81CB2C0877BE00A848C9 /* LZWechatApp.swift */,
+				6D3B81CD2C0877BE00A848C9 /* ContentView.swift */,
+				6D3B81CF2C0877C000A848C9 /* Assets.xcassets */,
+				6D3B81D12C0877C000A848C9 /* Preview Content */,
+			);
+			path = LZWechat;
+			sourceTree = "<group>";
+		};
+		6D3B81D12C0877C000A848C9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D3B81D22C0877C000A848C9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D3B81DB2C0877C100A848C9 /* LZWechatTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D3B81DC2C0877C100A848C9 /* LZWechatTests.swift */,
+			);
+			path = LZWechatTests;
+			sourceTree = "<group>";
+		};
+		6D3B81E52C0877C100A848C9 /* LZWechatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D3B81E62C0877C100A848C9 /* LZWechatUITests.swift */,
+				6D3B81E82C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift */,
+			);
+			path = LZWechatUITests;
+			sourceTree = "<group>";
+		};
+		6D3B81F72C087CA000A848C9 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				6D3B81F82C087CAC00A848C9 /* Root */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		6D3B81F82C087CAC00A848C9 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6D3B81F92C087CC800A848C9 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D3B81C72C0877BE00A848C9 /* LZWechat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3B81EC2C0877C100A848C9 /* Build configuration list for PBXNativeTarget "LZWechat" */;
+			buildPhases = (
+				6D3B81C42C0877BE00A848C9 /* Sources */,
+				6D3B81C52C0877BE00A848C9 /* Frameworks */,
+				6D3B81C62C0877BE00A848C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZWechat;
+			productName = LZWechat;
+			productReference = 6D3B81C82C0877BE00A848C9 /* LZWechat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D3B81D72C0877C100A848C9 /* LZWechatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3B81EF2C0877C100A848C9 /* Build configuration list for PBXNativeTarget "LZWechatTests" */;
+			buildPhases = (
+				6D3B81D42C0877C100A848C9 /* Sources */,
+				6D3B81D52C0877C100A848C9 /* Frameworks */,
+				6D3B81D62C0877C100A848C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3B81DA2C0877C100A848C9 /* PBXTargetDependency */,
+			);
+			name = LZWechatTests;
+			productName = LZWechatTests;
+			productReference = 6D3B81D82C0877C100A848C9 /* LZWechatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D3B81E12C0877C100A848C9 /* LZWechatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3B81F22C0877C100A848C9 /* Build configuration list for PBXNativeTarget "LZWechatUITests" */;
+			buildPhases = (
+				6D3B81DE2C0877C100A848C9 /* Sources */,
+				6D3B81DF2C0877C100A848C9 /* Frameworks */,
+				6D3B81E02C0877C100A848C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3B81E42C0877C100A848C9 /* PBXTargetDependency */,
+			);
+			name = LZWechatUITests;
+			productName = LZWechatUITests;
+			productReference = 6D3B81E22C0877C100A848C9 /* LZWechatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D3B81C02C0877BE00A848C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6D3B81C72C0877BE00A848C9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					6D3B81D72C0877C100A848C9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 6D3B81C72C0877BE00A848C9;
+					};
+					6D3B81E12C0877C100A848C9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 6D3B81C72C0877BE00A848C9;
+					};
+				};
+			};
+			buildConfigurationList = 6D3B81C32C0877BE00A848C9 /* Build configuration list for PBXProject "LZWechat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D3B81BF2C0877BE00A848C9;
+			packageReferences = (
+				6D3B81F52C08787A00A848C9 /* XCRemoteSwiftPackageReference "Refresh" */,
+				6D3B81F62C0878AE00A848C9 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
+			productRefGroup = 6D3B81C92C0877BE00A848C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D3B81C72C0877BE00A848C9 /* LZWechat */,
+				6D3B81D72C0877C100A848C9 /* LZWechatTests */,
+				6D3B81E12C0877C100A848C9 /* LZWechatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D3B81C62C0877BE00A848C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3B81D32C0877C000A848C9 /* Preview Assets.xcassets in Resources */,
+				6D3B81D02C0877C000A848C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3B81D62C0877C100A848C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3B81E02C0877C100A848C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D3B81C42C0877BE00A848C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3B81CE2C0877BE00A848C9 /* ContentView.swift in Sources */,
+				6D3B81CC2C0877BE00A848C9 /* LZWechatApp.swift in Sources */,
+				6D3B81FA2C087CC800A848C9 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3B81D42C0877C100A848C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3B81DD2C0877C100A848C9 /* LZWechatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3B81DE2C0877C100A848C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3B81E92C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift in Sources */,
+				6D3B81E72C0877C100A848C9 /* LZWechatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D3B81DA2C0877C100A848C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3B81C72C0877BE00A848C9 /* LZWechat */;
+			targetProxy = 6D3B81D92C0877C100A848C9 /* PBXContainerItemProxy */;
+		};
+		6D3B81E42C0877C100A848C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3B81C72C0877BE00A848C9 /* LZWechat */;
+			targetProxy = 6D3B81E32C0877C100A848C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D3B81EA2C0877C100A848C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D3B81EB2C0877C100A848C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D3B81ED2C0877C100A848C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LZWechat/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D3B81EE2C0877C100A848C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LZWechat/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D3B81F02C0877C100A848C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZWechat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LZWechat";
+			};
+			name = Debug;
+		};
+		6D3B81F12C0877C100A848C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZWechat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LZWechat";
+			};
+			name = Release;
+		};
+		6D3B81F32C0877C100A848C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LZWechat;
+			};
+			name = Debug;
+		};
+		6D3B81F42C0877C100A848C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LZWechat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D3B81C32C0877BE00A848C9 /* Build configuration list for PBXProject "LZWechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3B81EA2C0877C100A848C9 /* Debug */,
+				6D3B81EB2C0877C100A848C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3B81EC2C0877C100A848C9 /* Build configuration list for PBXNativeTarget "LZWechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3B81ED2C0877C100A848C9 /* Debug */,
+				6D3B81EE2C0877C100A848C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3B81EF2C0877C100A848C9 /* Build configuration list for PBXNativeTarget "LZWechatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3B81F02C0877C100A848C9 /* Debug */,
+				6D3B81F12C0877C100A848C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3B81F22C0877C100A848C9 /* Build configuration list for PBXNativeTarget "LZWechatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3B81F32C0877C100A848C9 /* Debug */,
+				6D3B81F42C0877C100A848C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D3B81F52C08787A00A848C9 /* XCRemoteSwiftPackageReference "Refresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wxxsw/Refresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		6D3B81F62C0878AE00A848C9 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 6D3B81C02C0877BE00A848C9 /* Project object */;
+}
