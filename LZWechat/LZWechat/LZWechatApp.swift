@@ -11,7 +11,7 @@ import SwiftUI
 struct LZWechatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
