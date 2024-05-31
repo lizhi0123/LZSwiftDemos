@@ -10,8 +10,9 @@ import SwiftUI
 struct RootView: View {
     
     @State private var tabSection: Int = 0
-    let datalist = 0..<5
+    let datalist = 0..<15
     var body: some View {
+        
         TabView(selection: $tabSection,
                 content:  {
             ChatHome()
@@ -55,8 +56,9 @@ struct RootView: View {
     }
     
     init(){
+        //设置tabview背景
         let appeareance = UITabBar.appearance()
-        appeareance.backgroundColor = UIColor.white
+        appeareance.backgroundColor = UIColor.systemGroupedBackground
     }
 }
 
