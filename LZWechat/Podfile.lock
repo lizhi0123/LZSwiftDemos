@@ -1,0 +1,60 @@
+PODS:
+  - Introspect (0.12.0)
+  - JKSwiftExtension (2.6.6)
+  - PermissionsSwiftUI (1.4.3):
+    - Introspect
+  - SwifterSwift (6.2.0):
+    - SwifterSwift/AppKit (= 6.2.0)
+    - SwifterSwift/Combine (= 6.2.0)
+    - SwifterSwift/CoreAnimation (= 6.2.0)
+    - SwifterSwift/CoreGraphics (= 6.2.0)
+    - SwifterSwift/CoreLocation (= 6.2.0)
+    - SwifterSwift/CryptoKit (= 6.2.0)
+    - SwifterSwift/Dispatch (= 6.2.0)
+    - SwifterSwift/Foundation (= 6.2.0)
+    - SwifterSwift/HealthKit (= 6.2.0)
+    - SwifterSwift/MapKit (= 6.2.0)
+    - SwifterSwift/SceneKit (= 6.2.0)
+    - SwifterSwift/SpriteKit (= 6.2.0)
+    - SwifterSwift/StoreKit (= 6.2.0)
+    - SwifterSwift/SwiftStdlib (= 6.2.0)
+    - SwifterSwift/UIKit (= 6.2.0)
+    - SwifterSwift/WebKit (= 6.2.0)
+  - SwifterSwift/AppKit (6.2.0)
+  - SwifterSwift/Combine (6.2.0)
+  - SwifterSwift/CoreAnimation (6.2.0)
+  - SwifterSwift/CoreGraphics (6.2.0)
+  - SwifterSwift/CoreLocation (6.2.0)
+  - SwifterSwift/CryptoKit (6.2.0)
+  - SwifterSwift/Dispatch (6.2.0)
+  - SwifterSwift/Foundation (6.2.0)
+  - SwifterSwift/HealthKit (6.2.0)
+  - SwifterSwift/MapKit (6.2.0)
+  - SwifterSwift/SceneKit (6.2.0)
+  - SwifterSwift/SpriteKit (6.2.0)
+  - SwifterSwift/StoreKit (6.2.0)
+  - SwifterSwift/SwiftStdlib (6.2.0)
+  - SwifterSwift/UIKit (6.2.0)
+  - SwifterSwift/WebKit (6.2.0)
+
+DEPENDENCIES:
+  - JKSwiftExtension
+  - PermissionsSwiftUI
+  - SwifterSwift
+
+SPEC REPOS:
+  trunk:
+    - Introspect
+    - JKSwiftExtension
+    - PermissionsSwiftUI
+    - SwifterSwift
+
+SPEC CHECKSUMS:
+  Introspect: b66b675de8a85d9ef832f3a710d8e3c7db186884
+  JKSwiftExtension: f8687c21846fcbda17a935c567293cacea681187
+  PermissionsSwiftUI: 4a6a2ac4b362da7da602cf0cf3978cf9307f049d
+  SwifterSwift: dd00873fb09cde19da88bdb2878f9fe70fe27b0f
+
+PODFILE CHECKSUM: dda18938ef5e6e6cd964788e627e46929fa4e816
+
+COCOAPODS: 1.15.2

@@ -14,10 +14,21 @@ struct RootView: View {
     var body: some View {
         TabView(selection: $tabSection,
                 content:  {
-            Text("Tab Content 1").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 1")/*@END_MENU_TOKEN@*/ }.tag(1)
-            Text("Tab Content 2").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 2")/*@END_MENU_TOKEN@*/ }.tag(2)
-            Text("Tab Content 3").tabItem { Text("Tab Label 3") }.tag(3)
+            ChatHome()
+                .tabItem { RootTabItem(type: .chat, selection: tabSection) }
+                .tag(RootTabItemType.chat.rawValue)
+            ContactHome()
+                .tabItem { RootTabItem(type: .contact, selection: tabSection) }
+                .tag(RootTabItemType.contact.rawValue)
+            DiscoverHome()
+                .tabItem { RootTabItem(type: .discover, selection: tabSection) }
+                .tag(RootTabItemType.discover.rawValue)
+            MeHome()
+                .tabItem { RootTabItem(type: .me, selection: tabSection) }
+                .tag(RootTabItemType.me.rawValue)
+
         })
+        .background(Color.white)
         /*
         NavigationView {
             List(0..<10) { item in
@@ -42,8 +53,13 @@ struct RootView: View {
 //            }))
 //        }
     }
+    
+    init(){
+        let appeareance = UITabBar.appearance()
+        appeareance.backgroundColor = UIColor.white
+    }
 }
 
 #Preview {
-    RootView()
+    RootView().previewLayout(.sizeThatFits)
 }
