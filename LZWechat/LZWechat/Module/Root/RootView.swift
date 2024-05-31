@@ -29,36 +29,13 @@ struct RootView: View {
                 .tag(RootTabItemType.me.rawValue)
 
         })
-        .background(Color.white)
-        /*
-        NavigationView {
-            List(0..<10) { item in
-                //Section(header: Text("特殊视图")) {
-                    NavigationLink(
-                        destination: Text("DEtial"),
-                        label: {
-                            Text("Label")
-                        })
-               // }
-
-            }
-            .navigationTitle("微信")
-            .navigationBarTitleDisplayMode(.inline)
-            */
-//            .listStyle(GroupedListStyle())
-//            .navigationBarTitle(Text("Example"), displayMode: .inline)
-//            .navigationBarItems(trailing: Button(action: {
-//                print("clicked")
-//            }, label: {
-//                Text("Right").foregroundColor(.orange)
-//            }))
-//        }
+        .background(Color.green)
     }
     
     init(){
         //设置tabview背景
-        let appeareance = UITabBar.appearance()
-        appeareance.backgroundColor = UIColor.systemGroupedBackground
+//        let appeareance = UITabBar.appearance()
+//        appeareance.backgroundColor = UIColor.systemGroupedBackground
     }
 }
 

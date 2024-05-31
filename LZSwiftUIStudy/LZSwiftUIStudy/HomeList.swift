@@ -127,6 +127,8 @@ struct HomeList: View {
                 
 
             }
+            .scrollContentBackground(.hidden)
+            .background(Color.red)
             .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("Example"), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
