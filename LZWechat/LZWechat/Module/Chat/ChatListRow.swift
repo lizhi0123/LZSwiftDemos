@@ -16,7 +16,6 @@ struct ChatListRow:View {
             Image("data_avatar1")
                 .resizable()
                 .frame(width: 48,height: 48)
-                .background(Color.red)
                 .cornerRadius(8)
             
             VStack(alignment: .leading, spacing: 5, content: {
@@ -31,7 +30,7 @@ struct ChatListRow:View {
                 })
                 Text("描述")
                     .lineLimit(1)
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundColor(.secondary)
             })
         })

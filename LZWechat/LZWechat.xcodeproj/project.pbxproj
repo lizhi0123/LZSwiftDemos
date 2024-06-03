@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		357E44FDBEAB9094C64D4AE3 /* Pods_LZWechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB5D8C0366080D5A20D3F9E /* Pods_LZWechat.framework */; };
 		3D18B5B0EA305285AD46192E /* Pods_LZWechat_LZWechatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9618E5682B616DACE1CEFA12 /* Pods_LZWechat_LZWechatUITests.framework */; };
+		6D36FB062C0DB53100B1E8A3 /* SearchEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D36FB052C0DB53100B1E8A3 /* SearchEntry.swift */; };
 		6D3B81CC2C0877BE00A848C9 /* LZWechatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81CB2C0877BE00A848C9 /* LZWechatApp.swift */; };
 		6D3B81CE2C0877BE00A848C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81CD2C0877BE00A848C9 /* ContentView.swift */; };
 		6D3B81D02C0877C000A848C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3B81CF2C0877C000A848C9 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		2598B07941EFAA91C99EE451 /* Pods-LZWechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZWechat.release.xcconfig"; path = "Target Support Files/Pods-LZWechat/Pods-LZWechat.release.xcconfig"; sourceTree = "<group>"; };
 		513D7776E8C06430BF9E5D92 /* Pods-LZWechat-LZWechatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZWechat-LZWechatUITests.release.xcconfig"; path = "Target Support Files/Pods-LZWechat-LZWechatUITests/Pods-LZWechat-LZWechatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57849A0AFB26E8504A73DEE5 /* Pods-LZWechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZWechat.debug.xcconfig"; path = "Target Support Files/Pods-LZWechat/Pods-LZWechat.debug.xcconfig"; sourceTree = "<group>"; };
+		6D36FB052C0DB53100B1E8A3 /* SearchEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEntry.swift; sourceTree = "<group>"; };
 		6D3B81C82C0877BE00A848C9 /* LZWechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZWechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3B81CB2C0877BE00A848C9 /* LZWechatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZWechatApp.swift; sourceTree = "<group>"; };
 		6D3B81CD2C0877BE00A848C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				6D3B81FC2C088AE600A848C9 /* ChatListHome.swift */,
 				6DD75F6E2C09D30D0046E0CD /* ChatListRow.swift */,
+				6D36FB052C0DB53100B1E8A3 /* SearchEntry.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D36FB062C0DB53100B1E8A3 /* SearchEntry.swift in Sources */,
 				6DD75F6F2C09D30D0046E0CD /* ChatListRow.swift in Sources */,
 				6D3B81CE2C0877BE00A848C9 /* ContentView.swift in Sources */,
 				6D3B82022C09747900A848C9 /* ContactHome.swift in Sources */,
@@ -575,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -632,7 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -659,7 +663,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,7 +694,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

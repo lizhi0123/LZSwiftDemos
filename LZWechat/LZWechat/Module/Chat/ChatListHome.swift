@@ -28,17 +28,28 @@ struct ChatListHome:View {
     var body: some View{
         NavigationView {
             List {
+                SearchEntry().frame(height: 50)
+                    .listRowInsets(EdgeInsets())
+                    .padding(EdgeInsets())
+                
                 ForEach(chatModels) { model in
                     ChatListRow(chatModel: model)
-                        .background(
-                        NavigationLink(destination: {
-                            Text("The Detail")
-                        }, label: {
-                            
-                        }).opacity(0)
-                    )
+                        .background {
+                            NavigationLink {
+                                Text("Detail")
+                            } label: {
+                                
+                            }.opacity(0)
+
+                        }
 //                    .listRowSeparator(.hidden)
                 }
+                .listRowInsets(EdgeInsets()) //清除row 旁边的空隙
+                //.listRowSeparator(.visible)
+                .listSectionSeparatorTint(Color.lightGray.opacity(0.5))
+//                .alignmentGuide(.listRowSeparatorLeading, computeValue: { dimension in
+//                    return 0
+//                })
                 
             }
             .listStyle(PlainListStyle())//PlainListStyle()
@@ -71,7 +82,8 @@ struct ChatListHome:View {
     
     func load()  {
 //        chatModels = ChatModel.all
-        chatModels.append(ChatModel(name: "lisi"))
+        chatModels.append(contentsOf: ChatModel.all)
+        
     }
 }
 
