@@ -25,7 +25,7 @@ struct ChatListHome:View {
     
     @State private var chatModels:[ChatModel] = ChatModel.all//[ChatModel(name: "zhangsan")]
 
-    var body: some View{
+    var body: some View {
         NavigationView {
             List {
                 SearchEntry().frame(height: 50)
@@ -59,11 +59,22 @@ struct ChatListHome:View {
             //.background(.linearGradient(colors: [.white,.accentColor], startPoint: .top, endPoint: .bottom))//渐变色
 //            .background(Color.red)
             .toolbar(content: {
-                Button(action: {
-                    print("--- 编辑")
-                }, label: {
-                    Text("编辑")
-                })
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
+                    Button(action: {
+                        print("--- 返回")
+                    }, label: {
+                        Text("返回")
+                    })
+                }
+                
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                    Button(action: {
+                        print("--- 编辑")
+                    }, label: {
+                        Text("编辑")
+                    })
+                }
+               
             })
             
             
