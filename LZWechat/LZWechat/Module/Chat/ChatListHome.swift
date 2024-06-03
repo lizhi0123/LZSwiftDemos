@@ -58,6 +58,13 @@ struct ChatListHome:View {
 //            .scrollContentBackground(.hidden)
             //.background(.linearGradient(colors: [.white,.accentColor], startPoint: .top, endPoint: .bottom))//渐变色
 //            .background(Color.red)
+            .toolbar(content: {
+                Button(action: {
+                    print("--- 编辑")
+                }, label: {
+                    Text("编辑")
+                })
+            })
             
             
         }
