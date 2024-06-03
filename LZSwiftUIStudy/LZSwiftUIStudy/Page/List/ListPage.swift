@@ -21,8 +21,9 @@ struct ListPage: View {
     var messages:[Message] = []
     
     var body: some View {
-        List(0..<10000) { index in
+        List(0..<1000) { index in
             Text("list hello \(index)")
+            Image("charleyrivers")
         }
     }
     

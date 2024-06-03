@@ -9,42 +9,51 @@ import SwiftUI
 import SwifterSwift
 import Foundation
 
-struct ChatModel:Identifiable {
+struct ChatModel:Identifiable,Codable {
     let id = UUID()
-    
     let name: String
+    
+    static let all:[ChatModel] = [
+        ChatModel(name: "zhangsan"),
+        ChatModel(name: "lisi"),
+        ChatModel(name: "wangwu"),
+        ChatModel(name: "zhaoliu"),
+    ]
 }
 
 struct ChatListHome:View {
     
-    let chatModels = [ChatModel( name: "meinv"),
-                      ChatModel( name: "shuage")]
+    @State private var chatModels:[ChatModel] = ChatModel.all//[ChatModel(name: "zhangsan")]
+
     var body: some View{
-        let listData = 0..<10
         NavigationView {
-            
-            //在 List 中，如果用 ForEach 处理数据源，所有的数据源的 View 竟然都要在 List 创建时进行初始化，这完全违背了 tableView 的本来意图
-            List(listData) { model in
-                //隐藏箭头
-                ChatListRow().background(
-                    NavigationLink(destination: {
-                        Text("The Detail")
-                    }, label: {
-                        
-                    })//.opacity(0)
-                )
-                .listRowSeparator(.hidden)
+            List {
+                ForEach(chatModels) { model in
+                    ChatListRow(chatModel: model)
+                        .background(
+                        NavigationLink(destination: {
+                            Text("The Detail")
+                        }, label: {
+                            
+                        }).opacity(0)
+                    )
+//                    .listRowSeparator(.hidden)
+                }
+                
             }
             .listStyle(PlainListStyle())//PlainListStyle()
             .navigationTitle("微信")
             .navigationBarTitleDisplayMode(.inline)
 //            .scrollContentBackground(.hidden)
             //.background(.linearGradient(colors: [.white,.accentColor], startPoint: .top, endPoint: .bottom))//渐变色
-            .background(Color.red)
+//            .background(Color.red)
             
             
         }
         .background(Color.blue)
+        .onAppear(perform: {
+            load()
+        })
         
     }
     init() {
@@ -58,6 +67,11 @@ struct ChatListHome:View {
         
         //取消分割
        
+    }
+    
+    func load()  {
+//        chatModels = ChatModel.all
+        chatModels.append(ChatModel(name: "lisi"))
     }
 }
 

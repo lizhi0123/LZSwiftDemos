@@ -11,16 +11,15 @@ import SwiftUI
 struct ForEachPage : View {
     
     var body: some View {
-        ForEach(0..<10000) { e in
-            Text("for each Hello \(e)")
-                .bold()
-                .font(.system(size: 25, design: .monospaced))
-                .padding(5)
-            }
-//            .border(Color.gray.gradient, width: 1,cornerRadius: 10)
-//        .border(Color.gray, width: 1)
-//        .cornerRadius(10)
-//            .navigationBarTitle(Text("ForEach"))
+        List{
+            ForEach(0..<1000) { e in
+                Text("for each Hello \(e)")
+
+                Image("foo")
+                }
+        }
+       
+
     }
 }
 
