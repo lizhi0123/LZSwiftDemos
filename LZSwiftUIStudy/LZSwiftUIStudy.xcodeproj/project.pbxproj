@@ -12,6 +12,7 @@
 		6D0224F22C0491A300CF37F9 /* ImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0224F12C0491A300CF37F9 /* ImageDemo.swift */; };
 		6D0224F42C0493E800CF37F9 /* ButtonLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0224F32C0493E800CF37F9 /* ButtonLinkDemo.swift */; };
 		6D0224F62C049DAE00CF37F9 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0224F52C049DAE00CF37F9 /* NavigationDemo.swift */; };
+		6D36FB022C0D87C400B1E8A3 /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D36FB012C0D87C400B1E8A3 /* ListPage.swift */; };
 		6D44E6BC2C05A9D900B77BFE /* PageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6BB2C05A9D900B77BFE /* PageRow.swift */; };
 		6D44E6C02C05AEC400B77BFE /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6BF2C05AEC400B77BFE /* WebViewPage.swift */; };
 		6D44E6C22C05B40000B77BFE /* ControllerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E6C12C05B40000B77BFE /* ControllerPage.swift */; };
@@ -75,6 +76,7 @@
 		6D0224F12C0491A300CF37F9 /* ImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemo.swift; sourceTree = "<group>"; };
 		6D0224F32C0493E800CF37F9 /* ButtonLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLinkDemo.swift; sourceTree = "<group>"; };
 		6D0224F52C049DAE00CF37F9 /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
+		6D36FB012C0D87C400B1E8A3 /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
 		6D44E6BB2C05A9D900B77BFE /* PageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRow.swift; sourceTree = "<group>"; };
 		6D44E6BF2C05AEC400B77BFE /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		6D44E6C12C05B40000B77BFE /* ControllerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPage.swift; sourceTree = "<group>"; };
@@ -156,9 +158,19 @@
 			path = ViewDemo;
 			sourceTree = "<group>";
 		};
+		6D36FB002C0D71F100B1E8A3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6D36FB012C0D87C400B1E8A3 /* ListPage.swift */,
+				6D44E7562C073F7300B77BFE /* ForEachPage.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		6D44E6BD2C05AE9000B77BFE /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				6D36FB002C0D71F100B1E8A3 /* List */,
 				6D44E75E2C07410800B77BFE /* Alert */,
 				6D44E7582C073FA900B77BFE /* Container */,
 				6D44E7492C073A7A00B77BFE /* Stack */,
@@ -166,7 +178,6 @@
 				6D44E6BE2C05AE9B00B77BFE /* SpecialPage */,
 				6D44E6C72C05F13500B77BFE /* NavigationButtonPage.swift */,
 				6D44E7502C073C7300B77BFE /* ScrollViewPage.swift */,
-				6D44E7562C073F7300B77BFE /* ForEachPage.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -464,6 +475,7 @@
 				6D0224EE2C04878A00CF37F9 /* TextLabelView.swift in Sources */,
 				6D44E74F2C073B9700B77BFE /* ZStackPage.swift in Sources */,
 				6D0224F42C0493E800CF37F9 /* ButtonLinkDemo.swift in Sources */,
+				6D36FB022C0D87C400B1E8A3 /* ListPage.swift in Sources */,
 				6DC0907D2C00668900710726 /* ModelData.swift in Sources */,
 				6DC090842C0073A700710726 /* LandmarkRow.swift in Sources */,
 				6DC090792C00657300710726 /* LandmarkList.swift in Sources */,
@@ -579,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -636,7 +648,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -654,6 +666,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LZSwiftUIStudy/Preview Content\"";
+				DEVELOPMENT_TEAM = X22675CXL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -661,7 +674,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -683,6 +696,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LZSwiftUIStudy/Preview Content\"";
+				DEVELOPMENT_TEAM = X22675CXL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -690,7 +704,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

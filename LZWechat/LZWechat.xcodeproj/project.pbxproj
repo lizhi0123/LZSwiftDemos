@@ -17,12 +17,12 @@
 		6D3B81E72C0877C100A848C9 /* LZWechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81E62C0877C100A848C9 /* LZWechatUITests.swift */; };
 		6D3B81E92C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81E82C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift */; };
 		6D3B81FA2C087CC800A848C9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81F92C087CC800A848C9 /* RootView.swift */; };
-		6D3B81FD2C088AE600A848C9 /* ChatHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81FC2C088AE600A848C9 /* ChatHome.swift */; };
+		6D3B81FD2C088AE600A848C9 /* ChatListHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81FC2C088AE600A848C9 /* ChatListHome.swift */; };
 		6D3B81FF2C0971D600A848C9 /* RootTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B81FE2C0971D600A848C9 /* RootTabItem.swift */; };
 		6D3B82022C09747900A848C9 /* ContactHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B82012C09747900A848C9 /* ContactHome.swift */; };
 		6D3B82052C0974C000A848C9 /* DiscoverHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B82042C0974C000A848C9 /* DiscoverHome.swift */; };
 		6D3B82082C0974EF00A848C9 /* MeHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B82072C0974EF00A848C9 /* MeHome.swift */; };
-		6DD75F6D2C09C4740046E0CD /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD75F6C2C09C4740046E0CD /* ChatList.swift */; };
+		6DD75F6F2C09D30D0046E0CD /* ChatListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD75F6E2C09D30D0046E0CD /* ChatListRow.swift */; };
 		ED7122236CEE1A451A29C0DF /* Pods_LZWechatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C266E48514DC3FEA78238 /* Pods_LZWechatTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,13 +59,13 @@
 		6D3B81E62C0877C100A848C9 /* LZWechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZWechatUITests.swift; sourceTree = "<group>"; };
 		6D3B81E82C0877C100A848C9 /* LZWechatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZWechatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D3B81F92C087CC800A848C9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		6D3B81FC2C088AE600A848C9 /* ChatHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHome.swift; sourceTree = "<group>"; };
+		6D3B81FC2C088AE600A848C9 /* ChatListHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListHome.swift; sourceTree = "<group>"; };
 		6D3B81FE2C0971D600A848C9 /* RootTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabItem.swift; sourceTree = "<group>"; };
 		6D3B82012C09747900A848C9 /* ContactHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHome.swift; sourceTree = "<group>"; };
 		6D3B82042C0974C000A848C9 /* DiscoverHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverHome.swift; sourceTree = "<group>"; };
 		6D3B82072C0974EF00A848C9 /* MeHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHome.swift; sourceTree = "<group>"; };
 		6D3CAF9CC3C0A849806055C5 /* Pods-LZWechatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZWechatTests.release.xcconfig"; path = "Target Support Files/Pods-LZWechatTests/Pods-LZWechatTests.release.xcconfig"; sourceTree = "<group>"; };
-		6DD75F6C2C09C4740046E0CD /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		6DD75F6E2C09D30D0046E0CD /* ChatListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListRow.swift; sourceTree = "<group>"; };
 		719C266E48514DC3FEA78238 /* Pods_LZWechatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZWechatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9618E5682B616DACE1CEFA12 /* Pods_LZWechat_LZWechatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZWechat_LZWechatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF41A2625A256D3215DD2041 /* Pods-LZWechat-LZWechatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZWechat-LZWechatUITests.debug.xcconfig"; path = "Target Support Files/Pods-LZWechat-LZWechatUITests/Pods-LZWechat-LZWechatUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		6D3B81FB2C088ACC00A848C9 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				6D3B81FC2C088AE600A848C9 /* ChatHome.swift */,
-				6DD75F6C2C09C4740046E0CD /* ChatList.swift */,
+				6D3B81FC2C088AE600A848C9 /* ChatListHome.swift */,
+				6DD75F6E2C09D30D0046E0CD /* ChatListRow.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -478,14 +478,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD75F6F2C09D30D0046E0CD /* ChatListRow.swift in Sources */,
 				6D3B81CE2C0877BE00A848C9 /* ContentView.swift in Sources */,
 				6D3B82022C09747900A848C9 /* ContactHome.swift in Sources */,
 				6D3B82082C0974EF00A848C9 /* MeHome.swift in Sources */,
 				6D3B81CC2C0877BE00A848C9 /* LZWechatApp.swift in Sources */,
-				6D3B81FD2C088AE600A848C9 /* ChatHome.swift in Sources */,
+				6D3B81FD2C088AE600A848C9 /* ChatListHome.swift in Sources */,
 				6D3B82052C0974C000A848C9 /* DiscoverHome.swift in Sources */,
 				6D3B81FF2C0971D600A848C9 /* RootTabItem.swift in Sources */,
-				6DD75F6D2C09C4740046E0CD /* ChatList.swift in Sources */,
 				6D3B81FA2C087CC800A848C9 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

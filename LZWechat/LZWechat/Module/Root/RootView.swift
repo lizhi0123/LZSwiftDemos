@@ -15,7 +15,7 @@ struct RootView: View {
         
         TabView(selection: $tabSection,
                 content:  {
-            ChatHome()
+            ChatListHome()
                 .tabItem { RootTabItem(type: .chat, selection: tabSection) }
                 .tag(RootTabItemType.chat.rawValue)
             ContactHome()
@@ -32,10 +32,12 @@ struct RootView: View {
         .background(Color.green)
     }
     
-    init(){
-        //设置tabview背景
+    init() {
+        // 设置tabview背景
 //        let appeareance = UITabBar.appearance()
 //        appeareance.backgroundColor = UIColor.systemGroupedBackground
+
+
     }
 }
 

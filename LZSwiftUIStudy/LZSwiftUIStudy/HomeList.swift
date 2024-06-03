@@ -125,11 +125,23 @@ struct HomeList: View {
                     }
                 }
                 
+                
+                Section(header: Text("其它")) {
+                    NavigationLink(destination: ListPage()) {
+                        PageRow(title: "List列表",subTitle: "列表")
+                    }
+                    
+                    NavigationLink(destination: ForEachPage()) {
+                        PageRow(title: "List列表 for each",subTitle: "列表")
+                    }
+                    
+                }
+                
 
             }
-            .scrollContentBackground(.hidden)
+//            .scrollContentBackground(.hidden)
             .background(Color.red)
-            .listStyle(GroupedListStyle())
+            .listStyle(PlainListStyle())//.listStyle(PlainListStyle())
             .navigationBarTitle(Text("Example"), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 print("clicked")
