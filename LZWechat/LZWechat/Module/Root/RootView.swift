@@ -12,24 +12,27 @@ struct RootView: View {
     @State private var tabSection: Int = 0
     let datalist = 0..<15
     var body: some View {
-        
-        TabView(selection: $tabSection,
-                content:  {
-            ChatListHome()
-                .tabItem { RootTabItem(type: .chat, selection: tabSection) }
-                .tag(RootTabItemType.chat.rawValue)
-            ContactHome()
-                .tabItem { RootTabItem(type: .contact, selection: tabSection) }
-                .tag(RootTabItemType.contact.rawValue)
-            DiscoverHome()
-                .tabItem { RootTabItem(type: .discover, selection: tabSection) }
-                .tag(RootTabItemType.discover.rawValue)
-            MeHome()
-                .tabItem { RootTabItem(type: .me, selection: tabSection) }
-                .tag(RootTabItemType.me.rawValue)
+        NavigationView(content: {
+            TabView(selection: $tabSection,
+                    content:  {
+                ChatListHome()
+                    .tabItem { RootTabItem(type: .chat, selection: tabSection) }
+                    .tag(RootTabItemType.chat.rawValue)
+                    
+                ContactHome()
+                    .tabItem { RootTabItem(type: .contact, selection: tabSection) }
+                    .tag(RootTabItemType.contact.rawValue)
+                DiscoverHome()
+                    .tabItem { RootTabItem(type: .discover, selection: tabSection) }
+                    .tag(RootTabItemType.discover.rawValue)
+                MeHome()
+                    .tabItem { RootTabItem(type: .me, selection: tabSection) }
+                    .tag(RootTabItemType.me.rawValue)
 
+            })
+            .background(Color.green)
         })
-        .background(Color.green)
+        
     }
     
     init() {
@@ -38,6 +41,10 @@ struct RootView: View {
 //        appeareance.backgroundColor = UIColor.systemGroupedBackground
 
 
+    }
+    
+    public func onDidAppear()  {
+        print("--- 界面显示")
     }
 }
 

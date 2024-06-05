@@ -26,7 +26,6 @@ struct ChatListHome:View {
     @State private var chatModels:[ChatModel] = ChatModel.all//[ChatModel(name: "zhangsan")]
 
     var body: some View {
-        NavigationView {
             List {
                 SearchEntry().frame(height: 50)
                     .listRowInsets(EdgeInsets())
@@ -36,10 +35,13 @@ struct ChatListHome:View {
                     ChatListRow(chatModel: model)
                         .background {
                             NavigationLink {
-                                Text("Detail")
+                                ChatDetailPage()
+                                    .toolbar(.hidden, for: .tabBar)
+                                    
                             } label: {
                                 
                             }.opacity(0)
+                               // .toolbar(.hidden, for: .tabBar)
 
                         }
 //                    .listRowSeparator(.hidden)
@@ -59,6 +61,7 @@ struct ChatListHome:View {
             //.background(.linearGradient(colors: [.white,.accentColor], startPoint: .top, endPoint: .bottom))//渐变色
 //            .background(Color.red)
             .toolbar(content: {
+                /*
                 ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
                     Button(action: {
                         print("--- 返回")
@@ -74,14 +77,21 @@ struct ChatListHome:View {
                         Text("编辑")
                     })
                 }
+                */
+                Button("编辑") {
+                    print("---- 编辑")
+                }
                
             })
             
-            
-        }
         .background(Color.blue)
         .onAppear(perform: {
+            print("--- onAppear")
+            self.viewOnAppear()
             load()
+        })
+        .onDisappear(perform: {
+            print("--- onDisappear")
         })
         
     }
@@ -98,12 +108,20 @@ struct ChatListHome:View {
        
     }
     
+     func viewOnAppear()  {
+        
+    }
+    
+   
+    
     func load()  {
 //        chatModels = ChatModel.all
         chatModels.append(contentsOf: ChatModel.all)
         
     }
 }
+
+
 
 #Preview {
     ChatListHome()
