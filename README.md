@@ -10,3 +10,7 @@
 
 - #### LZLayout  UICollectionView  分页 自定义layout
 说明 https://juejin.cn/spost/7314263159115710505
+
+- #### PhotoNoti 
+> 截图通知，录屏通知，录屏检测
+
