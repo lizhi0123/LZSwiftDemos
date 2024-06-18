@@ -24,6 +24,7 @@
 		6D3B82052C0974C000A848C9 /* DiscoverHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B82042C0974C000A848C9 /* DiscoverHome.swift */; };
 		6D3B82082C0974EF00A848C9 /* MeHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B82072C0974EF00A848C9 /* MeHome.swift */; };
 		6D73FADE2C1045900004355C /* ChatDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73FADD2C1045900004355C /* ChatDetailPage.swift */; };
+		6D73FAE12C10502F0004355C /* MomentListHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73FAE02C10502F0004355C /* MomentListHomePage.swift */; };
 		6DD75F6F2C09D30D0046E0CD /* ChatListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD75F6E2C09D30D0046E0CD /* ChatListRow.swift */; };
 		ED7122236CEE1A451A29C0DF /* Pods_LZWechatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C266E48514DC3FEA78238 /* Pods_LZWechatTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		6D3B82072C0974EF00A848C9 /* MeHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHome.swift; sourceTree = "<group>"; };
 		6D3CAF9CC3C0A849806055C5 /* Pods-LZWechatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZWechatTests.release.xcconfig"; path = "Target Support Files/Pods-LZWechatTests/Pods-LZWechatTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D73FADD2C1045900004355C /* ChatDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailPage.swift; sourceTree = "<group>"; };
+		6D73FAE02C10502F0004355C /* MomentListHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListHomePage.swift; sourceTree = "<group>"; };
 		6DD75F6E2C09D30D0046E0CD /* ChatListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListRow.swift; sourceTree = "<group>"; };
 		719C266E48514DC3FEA78238 /* Pods_LZWechatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZWechatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9618E5682B616DACE1CEFA12 /* Pods_LZWechat_LZWechatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZWechat_LZWechatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 		6D3B81F72C087CA000A848C9 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				6D73FADF2C104FFE0004355C /* Moment */,
 				6D3B82062C0974DF00A848C9 /* Me */,
 				6D3B82032C0974AE00A848C9 /* Discover */,
 				6D3B82002C09745600A848C9 /* Contact */,
@@ -217,6 +220,14 @@
 				6D3B82072C0974EF00A848C9 /* MeHome.swift */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		6D73FADF2C104FFE0004355C /* Moment */ = {
+			isa = PBXGroup;
+			children = (
+				6D73FAE02C10502F0004355C /* MomentListHomePage.swift */,
+			);
+			path = Moment;
 			sourceTree = "<group>";
 		};
 		DF7993BF46C6D517F8BB94BD /* Pods */ = {
@@ -485,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D36FB062C0DB53100B1E8A3 /* SearchEntry.swift in Sources */,
+				6D73FAE12C10502F0004355C /* MomentListHomePage.swift in Sources */,
 				6DD75F6F2C09D30D0046E0CD /* ChatListRow.swift in Sources */,
 				6D73FADE2C1045900004355C /* ChatDetailPage.swift in Sources */,
 				6D3B81CE2C0877BE00A848C9 /* ContentView.swift in Sources */,

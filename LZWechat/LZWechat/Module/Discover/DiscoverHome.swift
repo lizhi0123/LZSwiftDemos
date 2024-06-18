@@ -9,7 +9,9 @@ import SwiftUI
 
 struct DiscoverHome:View {
     var body: some View{
-        Text("DiscoverHome")
+        NavigationLink("朋友圈") {
+            MomentListHomePage()
+        }
     }
 }
 

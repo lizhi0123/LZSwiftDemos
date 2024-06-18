@@ -36,7 +36,7 @@ struct ChatListHome:View {
                         .background {
                             NavigationLink {
                                 ChatDetailPage()
-                                    .toolbar(.hidden, for: .tabBar)
+//                                    .toolbar(.hidden, for: .tabBar)
                                     
                             } label: {
                                 

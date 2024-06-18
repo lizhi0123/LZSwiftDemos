@@ -11,15 +11,26 @@ import SwiftUI
 struct ForEachPage : View {
     
     var body: some View {
-        List{
-            ForEach(0..<1000) { e in
-                Text("for each Hello \(e)")
+        Text("home attent top")
+            .background(Color.orange)
+        
+        List {
+            ForEach(0 ..< 1000) { e in
+                /*
+                VStack {
+                    Text("for each Hello \(e)")
 
-                Image("foo")
+                    Image("foo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
                 }
+                */
+                LZHomeAttentPostRow()
+            }
         }
-       
-
+//        .listStyle(.plain)
+        
+        Text("home attent end")
     }
 }
 
