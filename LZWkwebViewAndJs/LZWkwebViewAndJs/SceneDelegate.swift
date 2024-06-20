@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  PhotoNoti
+//  LZWkwebViewAndJs
 //
-//  Created by LiZhi on 2023/11/28.
+//  Created by LiZhi on 2024/6/20.
 //
 
 import UIKit

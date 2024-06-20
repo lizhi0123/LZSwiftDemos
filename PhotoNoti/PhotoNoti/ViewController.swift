@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private lazy var tipLabel: UILabel  = {
-        let label = UILabel(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 50)))
+        let label = UILabel(frame: CGRect(origin: CGPoint(x: 10, y: 100), size: CGSize(width: 100, height: 50)))
         label.text = "--不要截图"
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
@@ -20,14 +20,14 @@ class ViewController: UIViewController {
     }()
     
     private lazy  var textField : UITextField = {
-        let temp = UITextField(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 200)))
+        let temp = UITextField(frame: CGRect(origin: CGPoint(x: 10, y: 100), size: CGSize(width: 300, height: 200)))
         temp.backgroundColor = UIColor.red
         temp.isSecureTextEntry = true
         return temp
     }()
     
     private lazy var Label: UILabel  = {
-        let label = UILabel(frame: CGRect(x: 10, y: 40, width: 100, height: 50))
+        let label = UILabel(frame: CGRect(x: 10, y: 0, width: 100, height: 50))
         label.text = "--绝密内容"
         label.textAlignment = .center
   
@@ -41,18 +41,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "首页"
+        
+        self.view.backgroundColor = UIColor.white
+        
         self.view.addSubview(tipLabel)
         
-//        self.view.addSubview(textField)
+        self.view.addSubview(textField)
         
         let theView = textField.subviews.first
-        theView?.backgroundColor = UIColor.orange
-        theView?.frame = CGRect(origin: .zero, size: CGSize(width: 300, height: 200))
+//        theView?.backgroundColor = UIColor.orange
+//        theView?.frame = CGRect(origin: CGPoint(x: 10, y: 100), size: CGSize(width: 300, height: 200))
         if theView != nil {
-            self.view.addSubview(theView!)
+//            self.view.addSubview(theView!)
         }
         
-        theView?.addSubview(Label)
+//        theView?.addSubview(Label)
+        textField.addSubview(Label)
         
         
         // Do any additional setup after loading the view.

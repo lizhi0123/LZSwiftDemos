@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DBBFE5A2B15F5790050879B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBFE592B15F5790050879B /* AppDelegate.swift */; };
-		6DBBFE5E2B15F5790050879B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBFE5D2B15F5790050879B /* ViewController.swift */; };
-		6DBBFE612B15F5790050879B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBBFE5F2B15F5790050879B /* Main.storyboard */; };
-		6DBBFE632B15F57B0050879B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBBFE622B15F57B0050879B /* Assets.xcassets */; };
-		6DBBFE662B15F57B0050879B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBBFE642B15F57B0050879B /* LaunchScreen.storyboard */; };
+		6DBF6A7F2C23D53400646FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF6A7E2C23D53400646FDB /* AppDelegate.swift */; };
+		6DBF6A812C23D53400646FDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF6A802C23D53400646FDB /* SceneDelegate.swift */; };
+		6DBF6A832C23D53400646FDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF6A822C23D53400646FDB /* ViewController.swift */; };
+		6DBF6A862C23D53400646FDB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6DBF6A852C23D53400646FDB /* Base */; };
+		6DBF6A882C23D53700646FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBF6A872C23D53700646FDB /* Assets.xcassets */; };
+		6DBF6A8B2C23D53700646FDB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6DBF6A8A2C23D53700646FDB /* Base */; };
+		6DBF6A932C23D70200646FDB /* 11.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DBF6A922C23D70200646FDB /* 11.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6DBBFE562B15F5790050879B /* PhotoNoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DBBFE592B15F5790050879B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DBBFE5D2B15F5790050879B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6DBBFE602B15F5790050879B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6DBBFE622B15F57B0050879B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6DBBFE652B15F57B0050879B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6DBBFE672B15F57B0050879B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBF6A7B2C23D53400646FDB /* LZWkwebViewAndJs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZWkwebViewAndJs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBF6A7E2C23D53400646FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DBF6A802C23D53400646FDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DBF6A822C23D53400646FDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DBF6A852C23D53400646FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DBF6A872C23D53700646FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DBF6A8A2C23D53700646FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DBF6A8C2C23D53700646FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBF6A922C23D70200646FDB /* 11.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 11.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6DBBFE532B15F5790050879B /* Frameworks */ = {
+		6DBF6A782C23D53400646FDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6DBBFE4D2B15F5790050879B = {
+		6DBF6A722C23D53400646FDB = {
 			isa = PBXGroup;
 			children = (
-				6DBBFE582B15F5790050879B /* PhotoNoti */,
-				6DBBFE572B15F5790050879B /* Products */,
+				6DBF6A7D2C23D53400646FDB /* LZWkwebViewAndJs */,
+				6DBF6A7C2C23D53400646FDB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6DBBFE572B15F5790050879B /* Products */ = {
+		6DBF6A7C2C23D53400646FDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DBBFE562B15F5790050879B /* PhotoNoti.app */,
+				6DBF6A7B2C23D53400646FDB /* LZWkwebViewAndJs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6DBBFE582B15F5790050879B /* PhotoNoti */ = {
+		6DBF6A7D2C23D53400646FDB /* LZWkwebViewAndJs */ = {
 			isa = PBXGroup;
 			children = (
-				6DBBFE592B15F5790050879B /* AppDelegate.swift */,
-				6DBBFE5D2B15F5790050879B /* ViewController.swift */,
-				6DBBFE5F2B15F5790050879B /* Main.storyboard */,
-				6DBBFE622B15F57B0050879B /* Assets.xcassets */,
-				6DBBFE642B15F57B0050879B /* LaunchScreen.storyboard */,
-				6DBBFE672B15F57B0050879B /* Info.plist */,
+				6DBF6A922C23D70200646FDB /* 11.html */,
+				6DBF6A7E2C23D53400646FDB /* AppDelegate.swift */,
+				6DBF6A802C23D53400646FDB /* SceneDelegate.swift */,
+				6DBF6A822C23D53400646FDB /* ViewController.swift */,
+				6DBF6A842C23D53400646FDB /* Main.storyboard */,
+				6DBF6A872C23D53700646FDB /* Assets.xcassets */,
+				6DBF6A892C23D53700646FDB /* LaunchScreen.storyboard */,
+				6DBF6A8C2C23D53700646FDB /* Info.plist */,
 			);
-			path = PhotoNoti;
+			path = LZWkwebViewAndJs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DBBFE552B15F5790050879B /* PhotoNoti */ = {
+		6DBF6A7A2C23D53400646FDB /* LZWkwebViewAndJs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DBBFE6A2B15F57B0050879B /* Build configuration list for PBXNativeTarget "PhotoNoti" */;
+			buildConfigurationList = 6DBF6A8F2C23D53700646FDB /* Build configuration list for PBXNativeTarget "LZWkwebViewAndJs" */;
 			buildPhases = (
-				6DBBFE522B15F5790050879B /* Sources */,
-				6DBBFE532B15F5790050879B /* Frameworks */,
-				6DBBFE542B15F5790050879B /* Resources */,
+				6DBF6A772C23D53400646FDB /* Sources */,
+				6DBF6A782C23D53400646FDB /* Frameworks */,
+				6DBF6A792C23D53400646FDB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PhotoNoti;
-			productName = PhotoNoti;
-			productReference = 6DBBFE562B15F5790050879B /* PhotoNoti.app */;
+			name = LZWkwebViewAndJs;
+			productName = LZWkwebViewAndJs;
+			productReference = 6DBF6A7B2C23D53400646FDB /* LZWkwebViewAndJs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6DBBFE4E2B15F5790050879B /* Project object */ = {
+		6DBF6A732C23D53400646FDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					6DBBFE552B15F5790050879B = {
-						CreatedOnToolsVersion = 15.0.1;
+					6DBF6A7A2C23D53400646FDB = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 6DBBFE512B15F5790050879B /* Build configuration list for PBXProject "PhotoNoti" */;
+			buildConfigurationList = 6DBF6A762C23D53400646FDB /* Build configuration list for PBXProject "LZWkwebViewAndJs" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 6DBBFE4D2B15F5790050879B;
-			productRefGroup = 6DBBFE572B15F5790050879B /* Products */;
+			mainGroup = 6DBF6A722C23D53400646FDB;
+			productRefGroup = 6DBF6A7C2C23D53400646FDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DBBFE552B15F5790050879B /* PhotoNoti */,
+				6DBF6A7A2C23D53400646FDB /* LZWkwebViewAndJs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6DBBFE542B15F5790050879B /* Resources */ = {
+		6DBF6A792C23D53400646FDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DBBFE662B15F57B0050879B /* LaunchScreen.storyboard in Resources */,
-				6DBBFE632B15F57B0050879B /* Assets.xcassets in Resources */,
-				6DBBFE612B15F5790050879B /* Main.storyboard in Resources */,
+				6DBF6A932C23D70200646FDB /* 11.html in Resources */,
+				6DBF6A882C23D53700646FDB /* Assets.xcassets in Resources */,
+				6DBF6A8B2C23D53700646FDB /* Base in Resources */,
+				6DBF6A862C23D53400646FDB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6DBBFE522B15F5790050879B /* Sources */ = {
+		6DBF6A772C23D53400646FDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DBBFE5E2B15F5790050879B /* ViewController.swift in Sources */,
-				6DBBFE5A2B15F5790050879B /* AppDelegate.swift in Sources */,
+				6DBF6A832C23D53400646FDB /* ViewController.swift in Sources */,
+				6DBF6A7F2C23D53400646FDB /* AppDelegate.swift in Sources */,
+				6DBF6A812C23D53400646FDB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6DBBFE5F2B15F5790050879B /* Main.storyboard */ = {
+		6DBF6A842C23D53400646FDB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6DBBFE602B15F5790050879B /* Base */,
+				6DBF6A852C23D53400646FDB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6DBBFE642B15F57B0050879B /* LaunchScreen.storyboard */ = {
+		6DBF6A892C23D53700646FDB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6DBBFE652B15F57B0050879B /* Base */,
+				6DBF6A8A2C23D53700646FDB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6DBBFE682B15F57B0050879B /* Debug */ = {
+		6DBF6A8D2C23D53700646FDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -225,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		6DBBFE692B15F57B0050879B /* Release */ = {
+		6DBF6A8E2C23D53700646FDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -281,28 +289,27 @@
 			};
 			name = Release;
 		};
-		6DBBFE6B2B15F57B0050879B /* Debug */ = {
+		6DBF6A902C23D53700646FDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				DEVELOPMENT_TEAM = X22675CXL2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoNoti/Info.plist;
+				INFOPLIST_FILE = LZWkwebViewAndJs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LZStructure.PhotoNoti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWkwebViewAndJs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,28 +317,27 @@
 			};
 			name = Debug;
 		};
-		6DBBFE6C2B15F57B0050879B /* Release */ = {
+		6DBF6A912C23D53700646FDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5GAWG88GR9;
+				DEVELOPMENT_TEAM = X22675CXL2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoNoti/Info.plist;
+				INFOPLIST_FILE = LZWkwebViewAndJs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LZStructure.PhotoNoti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.LZWkwebViewAndJs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -342,25 +348,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DBBFE512B15F5790050879B /* Build configuration list for PBXProject "PhotoNoti" */ = {
+		6DBF6A762C23D53400646FDB /* Build configuration list for PBXProject "LZWkwebViewAndJs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DBBFE682B15F57B0050879B /* Debug */,
-				6DBBFE692B15F57B0050879B /* Release */,
+				6DBF6A8D2C23D53700646FDB /* Debug */,
+				6DBF6A8E2C23D53700646FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DBBFE6A2B15F57B0050879B /* Build configuration list for PBXNativeTarget "PhotoNoti" */ = {
+		6DBF6A8F2C23D53700646FDB /* Build configuration list for PBXNativeTarget "LZWkwebViewAndJs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DBBFE6B2B15F57B0050879B /* Debug */,
-				6DBBFE6C2B15F57B0050879B /* Release */,
+				6DBF6A902C23D53700646FDB /* Debug */,
+				6DBF6A912C23D53700646FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6DBBFE4E2B15F5790050879B /* Project object */;
+	rootObject = 6DBF6A732C23D53400646FDB /* Project object */;
 }
