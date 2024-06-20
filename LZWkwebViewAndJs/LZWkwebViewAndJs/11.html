@@ -10,8 +10,13 @@
             function getUserInfo(str) {
                 document.getElementById("secondid").value = str;
             }
+            
+            
 
- 
+           function h5BtnClick(){
+             var userInfoFromIos = getUserInfoFromIos();
+             document.getElementById("secondid").value = userInfoFromIos;
+           }
      
          </script>
     </head>
@@ -20,6 +25,8 @@
 
         <h1>展示oc所传数据</h1>
         <textarea id ="secondid" type="value" rows="5" cols="40"> </textarea>
+        
+        <input type="button" value="2.h5按钮 获取数据" onclick="h5BtnClick()" />
         
     </body>
 </html>

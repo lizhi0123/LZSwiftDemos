@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     private lazy var iosButton: UIButton  = {
         let button = UIButton(frame: CGRect(x: 10, y: 100, width: 180, height: 50))
-        button.setTitle("ios按钮 传数据给js", for: .normal)
+        button.setTitle("1.ios按钮 注入js", for: .normal)
         button.setImage(UIImage(named: ""), for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(ButtonClick), for: .touchUpInside)
@@ -42,15 +42,24 @@ class ViewController: UIViewController {
     
     @objc func ButtonClick() {
         let json = "{\"name\":\"zhangsan\",\"age\":12}"
+        /*
+        
         let inputJS = "getUserInfo" + "('\(json)')"
         /*
          getUserInfo('{"name":"zhangsan","age":12}')
          */
         print("传入的Js方法 = ",inputJS)
-        self.webView.evaluateJavaScript(inputJS) { (response, error) in
+        
+        */
+        let jsFuction = "function  getUserInfoFromIos(){ return \' \(json) \';}";
+        /*
+         function  getUserInfoFromIos(){ return ' {"name":"zhangsan","age":12} ';}
+         */
+        
+        print("jsFunction = ",jsFuction)
+        self.webView.evaluateJavaScript(jsFuction) { (response, error) in
             print( "--- response = ",response , error)
         }
-        
     }
 
 
