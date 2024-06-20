@@ -11,8 +11,8 @@ import WebKit
 class ViewController: UIViewController {
     
     private lazy var iosButton: UIButton  = {
-        let button = UIButton(frame: CGRect(x: 10, y: 100, width: 100, height: 50))
-        button.setTitle("ios按钮", for: .normal)
+        let button = UIButton(frame: CGRect(x: 10, y: 100, width: 180, height: 50))
+        button.setTitle("ios按钮 传数据给js", for: .normal)
         button.setImage(UIImage(named: ""), for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(ButtonClick), for: .touchUpInside)
@@ -41,7 +41,12 @@ class ViewController: UIViewController {
     }
     
     @objc func ButtonClick() {
-        let inputJS = "getUserInfo" + "('延迟5秒后:iOS向JS传递的值->sinleee hello')"
+        let json = "{\"name\":\"zhangsan\",\"age\":12}"
+        let inputJS = "getUserInfo" + "('\(json)')"
+        /*
+         getUserInfo('{"name":"zhangsan","age":12}')
+         */
+        print("传入的Js方法 = ",inputJS)
         self.webView.evaluateJavaScript(inputJS) { (response, error) in
             print( "--- response = ",response , error)
         }
