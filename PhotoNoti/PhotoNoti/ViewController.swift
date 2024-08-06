@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     private lazy  var textField : UITextField = {
         let temp = UITextField(frame: CGRect(origin: CGPoint(x: 10, y: 100), size: CGSize(width: 300, height: 200)))
-        temp.backgroundColor = UIColor.red
+        temp.backgroundColor = UIColor.clear
         temp.isSecureTextEntry = true
         return temp
     }()
@@ -43,33 +43,33 @@ class ViewController: UIViewController {
         
         self.title = "首页"
         
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.blue
         
         self.view.addSubview(tipLabel)
         
         self.view.addSubview(textField)
         
         let theView = textField.subviews.first
-//        theView?.backgroundColor = UIColor.orange
-//        theView?.frame = CGRect(origin: CGPoint(x: 10, y: 100), size: CGSize(width: 300, height: 200))
+        theView?.backgroundColor = UIColor.orange
+        theView?.frame = CGRect(origin: CGPoint(x: 10, y: 100), size: CGSize(width: 300, height: 200))
         if theView != nil {
-//            self.view.addSubview(theView!)
+            self.view.addSubview(theView!)
         }
         
-//        theView?.addSubview(Label)
-        textField.addSubview(Label)
+        theView?.addSubview(Label)
+//        textField.addSubview(Label)
         
         
         // Do any additional setup after loading the view.
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(screenshotAlertPhoto),
-                                               name: UIApplication.userDidTakeScreenshotNotification,
-                                               object: nil)
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(screenshotAlert(_:)),
-                                               name: UIScreen.capturedDidChangeNotification,
-                                               object: nil)
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(screenshotAlertPhoto),
+//                                               name: UIApplication.userDidTakeScreenshotNotification,
+//                                               object: nil)
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(screenshotAlert(_:)),
+//                                               name: UIScreen.capturedDidChangeNotification,
+//                                               object: nil)
 
     }
     
