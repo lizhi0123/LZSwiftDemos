@@ -40,8 +40,26 @@ class SecondViewController: UIViewController {
        
         let secondDetailVC = SecondDetailViewController()
         secondDetailVC.modalPresentationStyle = .custom
-//        secondDetailVC.definesPresentationContext = true
-        self.present(secondDetailVC, animated: true)
+        
+        print("弹出 secondDetailVC = \(secondDetailVC)  title  = \(secondDetailVC.title) \n")
+        
+        self.present(secondDetailVC, animated: true) { [weak self] in
+            guard let self = self else { return }
+            
+            
+            print("弹出 secondDetailVC , nav.vc.presentedViewController =  \(self.presentedViewController),nav.vc.presentingViewController = \(self.presentingViewController)")
+            
+            print("弹出 secondDetailVC , secondDetailVC.presentedViewController =  \(secondDetailVC.presentedViewController),secondDetailVC.presentingViewController = \(secondDetailVC.presentingViewController); title = \(secondDetailVC.title)")
+            
+            if let sceneDelegate = UIApplication.shared.connectedScenes
+                .first?.delegate as? SceneDelegate
+            {
+                // 你现在可以使用sceneDelegate来访问Scene相关的方法和属性
+                let tabbarVC = sceneDelegate.tabbarVC
+                
+                print("弹出 secondDetailVC , tabbarVC.presentedViewController =  \(tabbarVC?.presentedViewController),tabbarVC.presentingViewController = \(tabbarVC?.presentingViewController) \n")
+            }
+        }
     }
 
 }

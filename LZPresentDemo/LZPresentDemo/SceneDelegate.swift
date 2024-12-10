@@ -10,6 +10,9 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    var tabbarVC: UITabBarController?
+    var navVCB2: UIViewController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -18,10 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         self.window = UIWindow(windowScene: windowScene)
-        let tabbar = UITabBarController()
-        tabbar.viewControllers = [UINavigationController(rootViewController: FirstViewController()),
-                                  UINavigationController(rootViewController: SecondViewController())]
-        self.window?.rootViewController = tabbar
+        navVCB2 = SecondViewController()
+        tabbarVC = UITabBarController()
+        tabbarVC?.viewControllers = [UINavigationController(rootViewController: FirstViewController()),
+                                     UINavigationController(rootViewController: navVCB2!)]
+        self.window?.rootViewController = tabbarVC
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
     }
